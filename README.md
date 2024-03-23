@@ -99,6 +99,9 @@ gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize
 
 ## Vi(m)
 
+[.vimrc](.vimrc)  
+[Config files](.vim)
+
 ```
 # Check if compiled with clipboard support
 vim --version | grep clipboard
