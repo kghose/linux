@@ -60,14 +60,42 @@ lsusb
 ```
 
 ```
+# Firehose of hardware info
+sudo hwinfo
+```
+
+```
 # Service status
 sudo systemctl status <service name>
+
+# USe enable, start and stop to control services
 ```
 
 ```
 # Sleep mode details
 cat /sys/power/mem_sleep
 ```
+
+```
+# What the kernel should do after creating a hibernation image
+cat /sys/power/disk
+```
+
+
+```
+# Mask sleep states
+sudo systemctl mask hibernate.target hybrid-sleep.target
+```
+
+```
+# Examine masked states
+sudo systemctl status sleep.target suspend.target hibernate.target hybrid-sleep.target
+```
+
+```
+
+```
+
 
 ```
 # Printers
@@ -77,8 +105,17 @@ lpinfo -v
 lp
 ```
 
+```
+# Current window manager
+echo $XDG_CURRENT_DESKTOP
+```
+
 
 ## GNOME
+
+```
+gnome-shell --version
+```
 
 ```
 # Focus follows mouse
