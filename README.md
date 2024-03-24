@@ -177,3 +177,19 @@ vim --version | grep clipboard
 
 # e.g. 2gt will go to second tab  
 ```
+
+# Software I use
+
+```
+
+sudo apt install git flatpak pandoc simple-scan
+```
+
+## Flatpaks
+
+```
+flatpak install flathub io.github.dosbox-staging
+
+```
+
+
