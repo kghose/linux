@@ -92,10 +92,6 @@ sudo systemctl mask hibernate.target hybrid-sleep.target
 sudo systemctl status sleep.target suspend.target hibernate.target hybrid-sleep.target
 ```
 
-```
-
-```
-
 
 ```
 # Printers
@@ -108,6 +104,23 @@ lp
 ```
 # Current window manager
 echo $XDG_CURRENT_DESKTOP
+```
+
+## GRUB
+
+```
+# Edit GRUB configuration
+sudo vi /etc/default/grub
+```
+
+```
+# Write out GRUB configuration (Ubuntu)
+sudo update-grub  
+```
+
+```
+# If update-grub is not available
+sudo grub2-mkconfig -o /boot/grub/grub.cfg 
 ```
 
 
@@ -128,11 +141,12 @@ gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize
 ```
 
 ### Extensions
-
-- Dash to Dock
 - Forge
-- AppIndicator and KStatusNotifierItem Support
 - Stocks Extension
+
+#### Needed on openSUsE
+- Dash to Dock
+- AppIndicator and KStatusNotifierItem Support
 
 ## Vi(m)
 
