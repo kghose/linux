@@ -178,7 +178,15 @@ vim --version | grep clipboard
 # e.g. 2gt will go to second tab  
 ```
 
-# Software I use
+# Package management
+
+```
+# Show details (including size) of a package
+apt show X
+```
+
+
+## Software I use
 
 ```
 
