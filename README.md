@@ -178,7 +178,7 @@ vim --version | grep clipboard
 # e.g. 2gt will go to second tab  
 ```
 
-# Package management
+## Package management
 
 ```
 # Show details (including size) of a package
@@ -186,18 +186,46 @@ apt show X
 ```
 
 
-## Software I use
+# Software I use
 
+## General
 ```
-
-sudo apt install git flatpak pandoc simple-scan
+sudo apt install git flatpak simple-scan
 ```
 
 ## Flatpaks
 
 ```
-flatpak install flathub io.github.dosbox-staging
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
+flatpak install flathub org.mozilla.firefox
+flatpak install flathub io.github.dosbox-staging
+flatpak install flathub net.sf.VICE
+```
+
+### Flatpack commandlines
+
+```
+flatpak run --filesystem=/home/kghose/RetroComputing/dosbox io.github.dosbox-staging
+
+flatpak run --filesystem=/home/kghose/RetroComputing/c64/ net.sf.VICE
+
+flatpak run org.mozilla.firefox
 ```
 
 
+
+
+## For writing
+
+```
+# Install needed packages
+sudo apt install vim-gtk pandoc tex-live mupdf 
+```
+**mupdf can read epub**. Use "H" to fit the page to the window height. ">" to increase font size.
+
+
+```
+# Force mupdf to reload the file
+pkill -HUP mupdf
+```
