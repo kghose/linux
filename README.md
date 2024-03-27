@@ -123,6 +123,15 @@ sudo update-grub
 sudo grub2-mkconfig -o /boot/grub/grub.cfg 
 ```
 
+## Local hostname resolution
+
+(Allows machine to resolve devices on the LAN using `<hostname>.local` scheme.)  
+https://wiki.archlinux.org/title/avahi
+
+[mDNS](https://en.wikipedia.org/wiki/Multicast_DNS) is what enables this and the implementation for
+Linux is [Avahi](https://avahi.org/). Ubuntu installs this automatically, but other distros, like
+openSUsE don't. The arch wiki page (linked above) is a great resource for setting it up yourself.
+
 
 ## GNOME
 
