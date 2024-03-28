@@ -222,6 +222,11 @@ flatpak run --filesystem=/home/kghose/RetroComputing/c64/ net.sf.VICE
 flatpak run org.mozilla.firefox
 ```
 
+### Examine permissions
+
+```
+flatpak info --show-permissions org.mozilla.firefox
+```
 
 
 
