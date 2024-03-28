@@ -132,6 +132,20 @@ https://wiki.archlinux.org/title/avahi
 Linux is [Avahi](https://avahi.org/). Ubuntu installs this automatically, but other distros, like
 openSUsE don't. The arch wiki page (linked above) is a great resource for setting it up yourself.
 
+## SSH
+
+### Reuse ssh connection (e.g. for rsync)
+
+https://man.openbsd.org/ssh_config.5#ControlMaster
+
+e.g.
+
+```
+# in ~/.ssh/config
+ControlMaster auto
+ControlPath ~/.ssh/control:%C
+ControlPersist 5m
+```
 
 ## GNOME
 
