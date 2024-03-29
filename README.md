@@ -200,6 +200,12 @@ vim --version | grep clipboard
 
 # e.g. 2gt will go to second tab  
 ```
+### Plugins
+1. [git gutter](https://github.com/airblade/vim-gitgutter)
+2. [A.L.E](https://github.com/dense-analysis/ale)
+3. [NERDTree](https://github.com/preservim/nerdtree)
+
+
 
 ## Package management
 
