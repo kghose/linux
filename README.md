@@ -1,5 +1,8 @@
 # Linux cheat sheet
 
+[Bash multiple history files](bash-history.md)
+
+
 ## General
 
 ```
