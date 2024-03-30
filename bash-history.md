@@ -11,7 +11,7 @@ mkdir -p ${HISTDIR}
 
 # Create a separate history file for each tty.
 export HISTFILE="${HISTDIR}/tty`tty|cut -c10-`.hist"
-# Write the history entries immediately
+# Append to history rather than overwrite it
 shopt -s histappend
 ```
 
@@ -55,7 +55,7 @@ mkdir -p ${HISTDIR}
 
 # Create a separate history file for each tty.
 export HISTFILE="${HISTDIR}/tty`tty|cut -c10-`.hist"
-# Write the history entries immediately
+# Append to history rather than overwrite it
 shopt -s histappend
 
 # These are personal preferences,
