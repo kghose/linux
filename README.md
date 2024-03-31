@@ -1,7 +1,8 @@
 # Linux cheat sheet
 
 1. [Bash multiple history files](bash-history.md)
-2. [Vi(m)](vim.md)
+1. [Vi(m)](vim.md)
+1. [Multiple Dosbox configurations](dosbox-conf.md)
 
 ## General
 
