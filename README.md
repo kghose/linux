@@ -3,6 +3,8 @@
 1. [Bash multiple history files](bash-history.md)
 1. [Vi(m)](vim.md)
 1. [Multiple Dosbox configurations](dosbox-conf.md)
+1. [Writing](writing.md)
+
 
 ## General
 
@@ -217,18 +219,3 @@ flatpak run org.mozilla.firefox
 flatpak info --show-permissions org.mozilla.firefox
 ```
 
-
-
-## For writing
-
-```
-# Install needed packages
-sudo apt install vim-gtk pandoc tex-live mupdf 
-```
-**mupdf can read epub**. Use "H" to fit the page to the window height. ">" to increase font size.
-
-
-```
-# Force mupdf to reload the file
-pkill -HUP mupdf
-```
