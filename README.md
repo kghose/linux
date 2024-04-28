@@ -1,5 +1,7 @@
 # Linux cheat sheet
 
+1. [Gnome](gnome.md)
+1. [Utilities](utils.md)
 1. [Bash multiple history files](bash-history.md)
 1. [Vi(m)](vim.md)
 1. [Multiple Dosbox configurations](dosbox-conf.md)
@@ -152,31 +154,6 @@ ControlMaster auto
 ControlPath ~/.ssh/control:%C
 ControlPersist 5m
 ```
-
-## GNOME
-
-```
-gnome-shell --version
-```
-
-```
-# Focus follows mouse
-gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'
-```
-
-```
-# Set which buttons are visible on a window menu bar
-gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
-```
-
-### Extensions
-- Forge
-- Stocks Extension
-
-#### Needed on openSUsE
-- Dash to Dock
-- AppIndicator and KStatusNotifierItem Support
-
 
 ## Package management
 
