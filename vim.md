@@ -3,21 +3,34 @@
 [.vimrc](.vimrc)  
 [Config files](.vim)
 
+
+## Copy-paste
+
+Check if compiled with clipboard support
 ```
-# Check if compiled with clipboard support
 vim --version | grep clipboard
 
 # or
 :echo has('clipboard'))
 ```
+
+Paste from clipboards (When compiled with +clipboard option
 ```
-# Paste from clipboards (When compiled with +clipboard option
 "+p
 "*p
 ```
 
+Copy large number of lines
+
+1. In command mode mark starting line: `ma`
+1. In command mode, at last line, yank from mark: ``y`a``
+
+This can be used to delete too ``d`a``
+
+
+## Tabs
+Open file in new tab
 ```
-# Open file in new tab
 :tabedit <file>
 ```
 
@@ -27,6 +40,15 @@ vim --version | grep clipboard
 
 # e.g. 2gt will go to second tab  
 ```
+
+## _Esc_ ape from insert mode is slow
+
+https://vi.stackexchange.com/a/20220
+```
+set tttimeoutlen=5
+```
+
+
 ## Builtin file explorer: `netrw`
 
 - https://www.vim.org/scripts/script.php?script_id=1075
@@ -38,6 +60,16 @@ vim --version | grep clipboard
 :Sexplore
 :Vexplore
 ```
+
+## Color schemes
+```
+# See available
+:colorscheme [space] [CTRL+D]
+```
+
+The built in colorschemes are in `/usr/share/vim/vim90/colors/`
+
+
 
 ## Plugins
 1. [git gutter](https://github.com/airblade/vim-gitgutter)
