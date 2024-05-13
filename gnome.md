@@ -31,9 +31,18 @@ gsettings set org.gnome.desktop.wm.preferences button-layout
 ```
 
 ## Extensions
-- Forge
-- Stocks Extension
+- [Forge](https://github.com/forge-ext/forge) - Tiling manager.
+- [Argos](https://github.com/p-e-w/argos) - Commandline -> GNOME shell extension
+- [Stocks Extension](https://github.com/cinatic/stocks-extension)
 
 ### Needed separately on openSUsE
 - Dash to Dock
 - AppIndicator and KStatusNotifierItem Support
+
+
+### Logs (e.g. to debug an extension not starting)
+
+```
+journalctl /usr/bin/gnome-shell -S "2024-05-12 22:00"
+```
+
