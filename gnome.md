@@ -46,3 +46,8 @@ gsettings set org.gnome.desktop.wm.preferences button-layout
 journalctl /usr/bin/gnome-shell -S "2024-05-12 22:00"
 ```
 
+### Run a mini gnome session!!
+```
+dbus-run-session -- gnome-shell --nested --wayland
+```
+
