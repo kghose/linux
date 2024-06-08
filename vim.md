@@ -3,6 +3,20 @@
 [.vimrc](.vimrc)  
 [Config files](.vim)
 
+## Auto save for markdown files
+
+- https://stackoverflow.com/a/60095826
+- https://stackoverflow.com/a/63589188
+
+
+`.vimrc`
+```
+" Auto save for markdown files in insert mode
+ 18 autocmd BufNewFile,BufRead *.md :autocmd TextChangedI <buffer> if &readonly 
+== 0 | silent w    rite | endif
+
+```
+
 
 ## Copy-paste
 
