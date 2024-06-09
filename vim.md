@@ -11,8 +11,7 @@ In `.vimrc`
 autocmd BufNewFile,BufRead *.md :autocmd TextChangedI <buffer> if &readonly == 0 | silent write | endif
 ```
 
-[1](https://stackoverflow.com/a/60095826), 
-[2](https://stackoverflow.com/a/63589188)
+Refs: [[1](https://stackoverflow.com/a/60095826)], [[2](https://stackoverflow.com/a/63589188)]
 
 
 ## Copy-paste
@@ -62,15 +61,15 @@ set tttimeoutlen=5
 
 ## Builtin file explorer: `netrw`
 
-- https://www.vim.org/scripts/script.php?script_id=1075
-- https://neovim.io/doc/user/pi_netrw.html
-
 ```
 # Start with
 :Explore
 :Sexplore
 :Vexplore
 ```
+
+Refs: [[1](https://www.vim.org/scripts/script.php?script_id=1075)], 
+[[2](https://neovim.io/doc/user/pi_netrw.html)]
 
 ## Color schemes
 ```
