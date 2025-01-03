@@ -1,5 +1,9 @@
 # Linux cheat sheet
 
+## TOC
+
+{:toc}
+
 ## Topic sheets
 
 1. [Gnome](gnome.md)
@@ -31,66 +35,36 @@
 | `sudo systemctl start|stop|enable <service name>` | Enable, start and stop to control services |
 | `cat /sys/power/mem_sleep` | Sleep mode details |
 | `cat /sys/power/disk` | What the kernel should do after creating a hibernation image |
+| `sudo systemctl mask hibernate.target hybrid-sleep.target` | Mask sleep states |
+| `sudo systemctl status sleep.target suspend.target hibernate.target hybrid-sleep.target` | Examine masked states |
+| `lpstat` | Get printer details |
+| `lp` | print files |
+| `echo $XDG_CURRENT_DESKTOP` | Current window manager |
+| `sudo vi /etc/default/grub` | Edit GRUB configuration |
+| `sudo update-grub` | Write out GRUB configuration (Ubuntu) |
+| `sudo grub2-mkconfig -o /boot/grub/grub.cfg` | If update-grub is not available |
+| `avahi-browse -a` | Find devices via mDNS |
+| `apt show X`| Show details (including size) of a package | 
+| `ifconfig` | Networking interface configuration |
+| `mtr 8.8.8.8` | Trace route to host |
 
+## mDNS: Local hostname resolution
 
+Multicast DNS ([mDNS]) enables machines to resolve devices on the LAN using
+`<hostname>.local` scheme. The implementation for Linux is [Avahi]. Ubuntu
+installs this automatically, but some other distributions, like openSUsE, do
+not. [The arch wiki page](arch-avahi) is a great
+resource for setting it up yourself.  
 
-```
-# Mask sleep states
-sudo systemctl mask hibernate.target hybrid-sleep.target
-```
+[mDNS]: https://en.wikipedia.org/wiki/Multicast_DNS 
+[Avahi]: https://avahi.org/
+[arch-avahi]: https://wiki.archlinux.org/title/avahi
 
-```
-# Examine masked states
-sudo systemctl status sleep.target suspend.target hibernate.target hybrid-sleep.target
-```
-
-
-```
-# Printers
-
-lpstat -p -d
-lpinfo -v
-lp
-```
-
-```
-# Current window manager
-echo $XDG_CURRENT_DESKTOP
-```
-
-## GRUB
-
-```
-# Edit GRUB configuration
-sudo vi /etc/default/grub
-```
-
-```
-# Write out GRUB configuration (Ubuntu)
-sudo update-grub  
-```
-
-```
-# If update-grub is not available
-sudo grub2-mkconfig -o /boot/grub/grub.cfg 
-```
-
-## Local hostname resolution
-
-(Allows machine to resolve devices on the LAN using `<hostname>.local` scheme.)  
-https://wiki.archlinux.org/title/avahi
-
-[mDNS](https://en.wikipedia.org/wiki/Multicast_DNS) is what enables this and the implementation for
-Linux is [Avahi](https://avahi.org/). Ubuntu installs this automatically, but other distros, like
-openSUsE don't. The arch wiki page (linked above) is a great resource for setting it up yourself.
-
-## SSH
-
-### Reuse ssh connection (e.g. for rsync)
+## ControlMaster: persist/reuse ssh connections e.g. for rsync
 
 https://man.openbsd.org/ssh_config.5#ControlMaster
 
-e.g.
+Example:
 
 ```
 # in ~/.ssh/config
@@ -98,28 +72,6 @@ ControlMaster auto
 ControlPath ~/.ssh/control:%C
 ControlPersist 5m
 ```
-
-## Package management
-
-```
-# Show details (including size) of a package
-apt show X
-```
-
-## Networking
-
-```
-# Networking interface configuration
-ifconfig
-```
-
-
-```
-# Trace route to host
-mtr 8.8.8.8
-```
-
-
 
 
 # Software I use
