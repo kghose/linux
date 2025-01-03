@@ -18,71 +18,20 @@
 | `lsb_release -a` | Distribution version details |
 | `uname -a` | Kernel details |
 | `sudo dmidecode -s system-serial-number` | Machine serial number |
+| `journalctl --system -S "2024-03-22 14:00"` | System log (add `-no-tail` when piping to something) |
+| `edid-decode /sys/class/drm/card0-eDP-1/edid` | Get display details |
+| `sudo lshw -C memory` | Memory (RAM) details |
+| `sudo smartctl -a /dev/nvme0` | NVMe SSD details |
+| `lsblk` | Block device e.g. disk details |
+| `lscpu` | CPU details |
+| `lsusb` | USB bus details |
+| `sudo hwinfo` | Firehose of hardware info |
+| `df -H` | Disk space stats in human friendly format |
+| `sudo systemctl status <service name>` | Service status |
+| `sudo systemctl start|stop|enable <service name>` | Enable, start and stop to control services |
+| `cat /sys/power/mem_sleep` | Sleep mode details |
+| `cat /sys/power/disk` | What the kernel should do after creating a hibernation image |
 
-
-# System log
-journalctl --system -S "2024-03-22 14:00"
-
-# add -no-tail when piping to something
-```
-
-```
-# Get display details
-edid-decode /sys/class/drm/card0-eDP-1/edid
-```
-
-```
-# Memory (RAM) details
-sudo lshw -C memory
-```
-
-```
-# NVMe SSD details
-sudo smartctl -a /dev/nvme0
-```
-
-```
-# Block device e.g. disk details
-lsblk
-```
-
-```
-# CPU details
-lscpu
-```
-
-```
-# USB bus details
-lsusb
-```
-
-```
-# Firehose of hardware info
-sudo hwinfo
-```
-
-```
-# Disk space stats in human readable format
-du -H
-```
-
-
-```
-# Service status
-sudo systemctl status <service name>
-
-# USe enable, start and stop to control services
-```
-
-```
-# Sleep mode details
-cat /sys/power/mem_sleep
-```
-
-```
-# What the kernel should do after creating a hibernation image
-cat /sys/power/disk
-```
 
 
 ```
