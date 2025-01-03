@@ -1,6 +1,6 @@
 # Linux cheat sheet
 
-{:toc}
+## Topic sheets
 
 1. [Gnome](gnome.md)
 1. [Utilities](utils.md)
@@ -10,29 +10,16 @@
 1. [Writing](writing.md)
 
 
-## General
+## Command reference
 
-```
-# Commandline options kernel was started with
-cat /proc/cmdline
-```
+| Command | Keywords/Description |
+| ------- | ---------------------|
+| `cat /proc/cmdline` | Commandline options kernel was started with |
+| `lsb_release -a` | Distribution version details |
+| `uname -a` | Kernel details |
+| `sudo dmidecode -s system-serial-number` | Machine serial number |
 
-```
-# Distribution version details
-lsb_release -a
-```
 
-```
-# Kernel details
-uname -a
-```
-
-```
-# Machine serial number
-sudo dmidecode -s system-serial-number
-```
-
-```
 # System log
 journalctl --system -S "2024-03-22 14:00"
 
