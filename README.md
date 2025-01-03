@@ -1,5 +1,7 @@
 # Linux cheat sheet
 
+{:toc}
+
 1. [Gnome](gnome.md)
 1. [Utilities](utils.md)
 1. [Bash multiple history files](bash-history.md)
@@ -71,6 +73,12 @@ lsusb
 # Firehose of hardware info
 sudo hwinfo
 ```
+
+```
+# Disk space stats in human readable format
+du -H
+```
+
 
 ```
 # Service status
@@ -161,6 +169,21 @@ ControlPersist 5m
 # Show details (including size) of a package
 apt show X
 ```
+
+## Networking
+
+```
+# Networking interface configuration
+ifconfig
+```
+
+
+```
+# Trace route to host
+mtr 8.8.8.8
+```
+
+
 
 
 # Software I use
