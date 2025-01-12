@@ -1,7 +1,6 @@
 # Linux cheat sheet
 
-## TOC
-
+* TOC
 {:toc}
 
 ## Topic sheets
