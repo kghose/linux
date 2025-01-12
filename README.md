@@ -1,19 +1,7 @@
-# Linux cheat sheet
-
 * TOC
 {:toc}
 
-## Topic sheets
-
-1. [Gnome](gnome.md)
-1. [Utilities](utils.md)
-1. [Bash multiple history files](bash-history.md)
-1. [Vi(m)](vim.md)
-1. [Multiple Dosbox configurations](dosbox-conf.md)
-1. [Writing](writing.md)
-
-
-## Command reference
+# Command reference
 
 | Command | Keywords/Description |
 | ------- | ---------------------|
@@ -49,7 +37,7 @@
 | `ifconfig` | Networking interface configuration |
 | `mtr 8.8.8.8` | Trace route to host |
 
-## mDNS: Local hostname resolution
+# mDNS: Local hostname resolution
 
 Multicast DNS ([mDNS]) enables machines to resolve devices on the LAN using
 `<hostname>.local` scheme. The implementation for Linux is [Avahi]. Ubuntu
@@ -61,7 +49,7 @@ resource for setting it up yourself.
 [Avahi]: https://avahi.org/
 [arch-avahi]: https://wiki.archlinux.org/title/avahi
 
-## ControlMaster: persist/reuse ssh connections e.g. for rsync
+# ControlMaster: persist/reuse ssh connections e.g. for rsync
 
 https://man.openbsd.org/ssh_config.5#ControlMaster
 
@@ -73,6 +61,15 @@ ControlMaster auto
 ControlPath ~/.ssh/control:%C
 ControlPersist 5m
 ```
+
+# Topic sheets
+
+1. [Gnome](gnome.md)
+1. [Utilities](utils.md)
+1. [Bash multiple history files](bash-history.md)
+1. [Vi(m)](vim.md)
+1. [Multiple Dosbox configurations](dosbox-conf.md)
+1. [Writing](writing.md)
 
 
 # Software I use
