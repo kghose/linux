@@ -35,7 +35,7 @@
 | `sudo systemctl start|stop|enable <service name>` | Enable, start and stop to control services |
 | `cat /sys/power/mem_sleep` | Sleep mode details |
 | `cat /sys/power/disk` | What the kernel should do after creating a hibernation image |
-| `sudo systemctl mask hibernate.target hybrid-sleep.target` | Mask sleep states |
+| <pre>sudo systemctl mask \<br>hibernate.target hybrid-sleep.target</pre> | Mask sleep states |
 | `sudo systemctl status sleep.target suspend.target hibernate.target hybrid-sleep.target` | Examine masked states |
 | `lpstat` | Get printer details |
 | `lp` | print files |
@@ -44,6 +44,8 @@
 | `sudo update-grub` | Write out GRUB configuration (Ubuntu) |
 | `sudo grub2-mkconfig -o /boot/grub/grub.cfg` | If update-grub is not available |
 | `avahi-browse -a` | Find devices via mDNS |
+| `avahi-resolve-address 192.168.8.1` | Find mDNS name for given address |
+| `getent hosts 192.168.8.1` | |
 | `apt show X`| Show details (including size) of a package | 
 | `ifconfig` | Networking interface configuration |
 | `mtr 8.8.8.8` | Trace route to host |
