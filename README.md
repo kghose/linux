@@ -36,6 +36,13 @@
 | `apt show X`| Show details (including size) of a package | 
 | `ifconfig` | Networking interface configuration |
 | `mtr 8.8.8.8` | Trace route to host |
+| `ls -R` | List directory contents recursively |
+| `cmd > std.out 2> std.err` | Redirect stdout of `cmd` to `std.out` and stderr to `std.err` |
+| `cmd 2> out.txt` | Redirect stdout and stderr to `out.txt` |
+| `find . -type d -empty -print` | Find and print all empty directories |
+| `find . -type d -empty -delete`| Delete all empty directories |
+| `find Takeout -name "*.json" -type f -print` | Find and print all files with given extension |
+
 
 # mDNS: Local hostname resolution
 
@@ -61,6 +68,19 @@ ControlMaster auto
 ControlPath ~/.ssh/control:%C
 ControlPersist 5m
 ```
+
+# tmux
+
+Add `setw -g mouse on` in `~/.tmux.conf` to enable scrollback with mouse scroll.
+
+
+# Synology NAS
+
+- Add `https://synocommunity.com/` to Package Sources in Package manager.
+- `mosh` is found in it's own package
+- `tmux` is found in SynoCLI Network Tools
+
+
 
 # Topic sheets
 
