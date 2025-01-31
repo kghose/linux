@@ -39,10 +39,13 @@
 | `ls -R` | List directory contents recursively |
 | `cmd > std.out 2> std.err` | Redirect stdout of `cmd` to `std.out` and stderr to `std.err` |
 | `cmd 2> out.txt` | Redirect stdout and stderr to `out.txt` |
+| `du -sh <directory>` | Size of directory |
+| `df -H` | Used and free sizes of all mount points |
 | `find . -type d -empty -print` | Find and print all empty directories |
 | `find . -type d -empty -delete`| Delete all empty directories |
 | `find Takeout -name "*.json" -type f -print` | Find and print all files with given extension |
-
+| `xhost + local:user2` | grant "user2" access to your display on the (non-network) local machine |
+| `su - user2` | open a login shell as "user2" |
 
 # mDNS: Local hostname resolution
 
