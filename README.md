@@ -83,7 +83,7 @@ Add `setw -g mouse on` in `~/.tmux.conf` to enable scrollback with mouse scroll.
 - `mosh` is found in it's own package
 - `tmux` is found in SynoCLI Network Tools
 
-# Vi(m)
+# Vi(m) / NeoVim
 
 [.vimrc](https://github.com/kghose/linux/blob/main/.vimrc)  
 [Config files](https://github.com/kghose/linux/blob/main/.vim)
@@ -92,7 +92,7 @@ Add `setw -g mouse on` in `~/.tmux.conf` to enable scrollback with mouse scroll.
 | ------- | ---------------------|
 | `gq}` | Wrap paragraph |
 | `34%` | Go to 34% of the file |
-
+| `GitGutterStageHunk` | Stage the hunk the cursor is on |
 
 ## Auto save for markdown files
 
