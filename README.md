@@ -22,7 +22,7 @@
 | `sudo systemctl start|stop|enable <service name>` | Enable, start and stop to control services |
 | `cat /sys/power/mem_sleep` | Sleep mode details |
 | `cat /sys/power/disk` | What the kernel should do after creating a hibernation image |
-| <pre>sudo systemctl mask \<br>hibernate.target hybrid-sleep.target</pre> | Mask sleep states |
+| `sudo systemctl mask hibernate.target hybrid-sleep.target` | Mask sleep states |
 | `sudo systemctl status sleep.target suspend.target hibernate.target hybrid-sleep.target` | Examine masked states |
 | `lpstat` | Get printer details |
 | `lp` | print files |
@@ -44,8 +44,14 @@
 | `find . -type d -empty -print` | Find and print all empty directories |
 | `find . -type d -empty -delete`| Delete all empty directories |
 | `find Takeout -name "*.json" -type f -print` | Find and print all files with given extension |
-| `xhost + local:user2` | grant "user2" access to your display on the (non-network) local machine |
+| `iperf3 -s` | Start [iperf3]() server on target machine "hostname" |
+| `iperf3 -c hostname` | connect to "hostname" and determine speed of connection |
+| `xhost + local:user2` | grant "user2" access to your display on the 
+(non-network) local machine |
 | `su - user2` | open a login shell as "user2" |
+| `pdfjam <input file> <page ranges> -o <output file>` | Extract pages from pdf|
+
+
 
 # mDNS: Local hostname resolution
 
@@ -96,7 +102,7 @@ Add `setw -g mouse on` in `~/.tmux.conf` to enable scrollback with mouse scroll.
 
 ## Auto save for markdown files
 
-In `.vimrc`
+In `.vimrc`/`init.vim`
 ```
 " Auto save for markdown files in insert mode
 autocmd BufNewFile,BufRead *.md :autocmd TextChangedI <buffer> if &readonly == 0 | silent write | endif
